@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #e4b40d;
+  --secondary: #fbd966;
+  --midwhite: #f0f0f0b7;
+
+  --background: #071624;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.grad {
+  /* background-image: linear-gradient(to right, #fbd966, var(--primary)); */
+}
+.btn-gradient {
+  background-image: linear-gradient(90deg, var(--primary), #fbd966);
+}
+
+.linear-grad {
+  background: linear-gradient(200deg, var(--primary) 10%, #fbd966 100%);
+  filter: blur(30px);
+  opacity: 0.2;
+}
+
+.waves {
+  animation: rotate-animation 10s infinite linear;
+  /* animation: 10s linear 0s infinite normal none running rotate; */
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* animation: 10s linear 0s infinite normal none running rotate; */
+
+/* @keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  } */
+/* } */
