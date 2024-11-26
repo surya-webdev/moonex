@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <nav className="z-10 w-full">
+    <nav className="relative z-10 w-full">
       <div className="flex items-center justify-between px-4 py-6 font-fira lg:justify-between">
         <div className="flex items-center justify-center gap-4 justify-self-start text-2xl text-primary">
           <img src="./logo.svg" alt="logo" />
@@ -48,20 +48,24 @@ function Navbar() {
                 className="flex h-full w-full flex-col items-center justify-center gap-6"
               >
                 <li>
+                  <a href="#about">Home</a>
+                </li>
+                <li>
                   <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#program">Program</a>
+                  <a href="#program">Roadmap</a>
                 </li>
                 <li>
-                  <a href="#form">Contact</a>
+                  <a href="#form">FAQ</a>
                 </li>
                 <li>
-                  <button
-                    className="rounded-md border-2 border-solid border-black px-8 py-3"
-                    href="#form"
-                  >
-                    Be a Donor
+                  <a href="#form">Contact Us</a>
+                </li>
+                <li>
+                  {" "}
+                  <button className="rounded-[1rem] border border-background bg-transparent px-2 py-2 text-background sm:text-sm md:px-4 md:py-2 lg:px-6 lg:py-3 lg:text-lg">
+                    Connect Wallet
                   </button>
                 </li>
               </ul>
