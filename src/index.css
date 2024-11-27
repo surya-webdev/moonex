@@ -19,7 +19,17 @@
 body {
   line-height: 1.5;
   font-weight: 400;
-  overflow-x: hidden;
+}
+
+.section {
+  transition:
+    transform 1s,
+    opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .grad {
@@ -54,11 +64,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-/* animation: 10s linear 0s infinite normal none running rotate; */
-
-/* @keyframes rotate {
-  to {
-    transform: rotate(1turn);
-  } */
-/* } */

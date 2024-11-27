@@ -1,7 +1,6 @@
+import { useState } from "react";
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
-import { useState } from "react";
-import { div } from "motion/react-client";
 
 function Faq() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -25,15 +24,18 @@ function Faq() {
   ];
 
   return (
-    <section className="relative flex w-full flex-col items-center justify-center px-4">
-      <div className="flex w-full flex-col items-center justify-center rounded-md bg-[#d9d9d917] px-6 backdrop-blur-3xl md:w-[80%]">
-        <h2 className="my-4 text-center text-4xl font-bold">
+    <section
+      id="faq"
+      className="section relative my-40 flex w-full flex-col items-center justify-center px-4"
+    >
+      <div className="flex w-full flex-col items-center justify-center gap-10 rounded-md bg-[#d9d9d917] px-6 py-10 backdrop-blur-3xl md:w-[80%]">
+        <h2 className="my-4 text-center text-4xl font-bold lg:my-6">
           <span className="font-fira text-primary">FAQs</span>
         </h2>
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`flex w-full flex-col ${index === 2 ? "" : "border-b-[0.5px] border-midwhite"} `}
+            className={`flex w-full flex-col gap-6 ${index === 2 ? "" : "border-b-[0.5px] border-midwhite"} `}
           >
             <button
               onClick={() => setOpenFaq(openFaq === index ? null : index)}

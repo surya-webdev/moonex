@@ -30,10 +30,10 @@ export default function Features() {
   ];
 
   return (
-    <div className="mb-9 px-4 font-rale text-white md:p-8">
+    <div id="feature" className="section my-9 px-4 font-rale text-white md:p-8">
       <div>
-        <h1 className="mb-12 text-center text-4xl font-bold md:text-5xl">
-          Our <span className="font-fira text-yellow-500">Features</span>
+        <h1 className="mb-12 py-10 text-center font-fira text-4xl font-bold md:text-5xl">
+          Our <span className="font-bold text-yellow-500">Features</span>
         </h1>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">

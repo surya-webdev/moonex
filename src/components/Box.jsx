@@ -3,9 +3,12 @@ import { TbX } from "react-icons/tb";
 
 function Box() {
   return (
-    <section className="relative flex flex-col justify-center gap-10 p-4 font-fira lg:p-16 xl:p-[6rem]">
+    <section
+      id="program"
+      className="section relative flex flex-col justify-center gap-10 p-4 font-fira lg:p-16 xl:p-[6rem]"
+    >
       <div>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl">
+        <h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">
           Why <span className="text-primary"> MoonEX ?</span>
         </h2>
       </div>

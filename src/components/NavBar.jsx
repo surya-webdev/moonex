@@ -3,6 +3,7 @@ import { GrClose } from "react-icons/gr";
 import { RiMenu2Fill } from "react-icons/ri";
 
 import Button from "./Button";
+import trigger from "../_helper/trigger";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -14,24 +15,27 @@ function Navbar() {
           <img src="./logo.svg" alt="logo" />
           <span>Moonex</span>
         </div>
-        <ul className="hidden text-[16px] font-medium lg:flex lg:gap-20">
+        <ul
+          onClick={(e) => trigger(e)}
+          className="hidden text-[16px] font-medium lg:flex lg:gap-20"
+        >
           <li>
-            <a href="#about">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#program">About</a>
           </li>
           <li>
-            <a href="#program">Roadmap</a>
+            <a href="#feature">Roadmap</a>
           </li>
           <li>
-            <a href="#form">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
           <li>
-            <a href="#form">Contact Us</a>
+            <a href="#footer">Contact Us</a>
           </li>
         </ul>
-        <div className="hidden lg:block">
+        <div onClick={(e) => trigger(e)} className="hidden lg:block">
           <Button>Connect Wallet</Button>
         </div>
 
@@ -46,27 +50,31 @@ function Navbar() {
             <ul
               onClick={(e) => {
                 setIsOpen((s) => !s);
+                trigger(e);
               }}
               className="flex h-full w-full flex-col items-center justify-center gap-6"
             >
               <li>
-                <a href="#about">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#program">About</a>
               </li>
               <li>
-                <a href="#program">Roadmap</a>
+                <a href="#feature">Roadmap</a>
               </li>
               <li>
-                <a href="#form">FAQ</a>
+                <a href="#faq">FAQ</a>
               </li>
               <li>
-                <a href="#form">Contact Us</a>
+                <a href="#footer">Contact Us</a>
               </li>
               <li>
-                {" "}
-                <button className="rounded-[1rem] border border-background bg-transparent px-2 py-2 text-background sm:text-sm md:px-4 md:py-2 lg:px-6 lg:py-3 lg:text-lg">
+                <button
+                  onClick={(e) => trigger(e)}
+                  href="#home"
+                  className="rounded-[1rem] border border-background bg-transparent px-2 py-2 text-background sm:text-sm md:px-4 md:py-2 lg:px-6 lg:py-3 lg:text-lg"
+                >
                   Connect Wallet
                 </button>
               </li>
