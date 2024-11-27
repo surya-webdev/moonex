@@ -34,6 +34,9 @@ body {
   filter: blur(30px);
   opacity: 0.2;
 }
+.linear-grad2 {
+  background: linear-gradient(200deg, var(--primary) 10%, #fbd966 100%);
+}
 
 .waves {
   animation: rotate-animation 10s infinite linear;

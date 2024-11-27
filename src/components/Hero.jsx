@@ -3,7 +3,7 @@ import Navbar from "./NavBar";
 
 function Hero() {
   return (
-    <section className="overflow-hidden">
+    <section className="min-h-screen overflow-hidden">
       <Navbar />
       <section className="relative grid grid-cols-1 items-center justify-center gap-10 leading-tight lg:grid-cols-[2fr_1.5fr] lg:p-16 xl:p-[6rem]">
         <div className="relative z-20 flex flex-col items-center justify-center gap-6 px-4 sm:px-5 md:px-6 lg:items-start lg:justify-start">
