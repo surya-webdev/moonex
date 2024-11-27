@@ -5,7 +5,7 @@ import trigger from "../_helper/trigger";
 
 function Footers() {
   return (
-    <footer className="footer section mt-24 border-t border-gray-800 px-12 py-24 lg:px-40">
+    <footer className="footer section mt-10 border-t border-gray-800 px-12 py-24 lg:px-40">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex items-center gap-2">
           <img src="./logo2.svg" alt="logo" />

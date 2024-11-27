@@ -46,7 +46,7 @@ function Navbar() {
         </div>
 
         {!isOpen && (
-          <div className="absolute right-0 top-0 h-screen min-h-screen w-screen bg-primary">
+          <div className="absolute right-0 top-0 h-screen min-h-screen w-screen bg-primary text-xl">
             <ul
               onClick={(e) => {
                 setIsOpen((s) => !s);
